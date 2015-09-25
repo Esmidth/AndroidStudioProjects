@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NasaDailyImage</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="test_image_date">Mon,27 Dec 2010 00:00:00 EST</string>
+    <string name="test_image_title">Decorating the Sky</string>
+    <string name="test_image_description">This mosaic image taken by NASA\'s Wide-field Infrared Survey Explorer, or WISE,features three nebulae that ....\nThis mosaic image taken by NASA\'s Wide-field Infrared Survey Explorer, or WISE,features three nebulae that ....\nThis mosaic image taken by NASA\'s Wide-field Infrared Survey Explorer, or WISE,features three nebulae that ....\nThis mosaic image taken by NASA\'s Wide-field Infrared Survey Explorer, or WISE,features three nebulae that ....\nThis mosaic image taken by NASA\'s Wide-field Infrared Survey Explorer, or WISE,features three nebulae that ....\nThis mosaic image taken by NASA\'s Wide-field Infrared Survey Explorer, or WISE,features three nebulae that ....\nThis mosaic image taken by NASA\'s Wide-field Infrared Survey Explorer, or WISE,features three nebulae that ....</string>
+</resources>
