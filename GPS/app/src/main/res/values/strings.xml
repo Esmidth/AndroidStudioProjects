@@ -3,4 +3,5 @@
 
     <string name="hello_world">Fuck you!</string>
     <string name="action_settings">Settings</string>
+    <string name="button_name">Refresh</string>
 </resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Android1</string>
+    <string name="defaultLeftText">X coord</string>
+    <string name="defaultRightText">Y coord</string>
+    <string name="labelRed">Red</string>
+    <string name="labelGreen">Green</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="latitudelabel">latitudeLabel</string>
+    <string name="providerLabel">providerLabel</string>
+    <string name="changeLocationProvidersSettings"></string>
+    <string name="enabledProvidersLabel"></string>
+    <string name="secondsUnit"></string>
+    <string name="accuracyLabel"></string>
+    <string name="metersUnit"></string>
+    <string name="timeToFixLabel"></string>
+    <string name="longitudeLabel"></string>
+</resources>

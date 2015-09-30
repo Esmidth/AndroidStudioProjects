@@ -16,8 +16,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class GPSS extends AppCompatActivity {
 
@@ -27,7 +30,6 @@ public class GPSS extends AppCompatActivity {
         setContentView(R.layout.activity_gpss);
         openGPSSettings();
         getLocation();
-
     }
 
     @Override
@@ -100,12 +102,14 @@ public class GPSS extends AppCompatActivity {
         criteria.setBearingRequired(false);
         criteria.setCostAllowed(true);
         criteria.setPowerRequirement(Criteria.POWER_LOW);
+        /*
         String provider = locationManger.getBestProvider(criteria, true); // 获取GPS信息
         Location location = locationManger.getLastKnownLocation(provider);// 通过GPS获取位置
         updateToNewLocation(location);
         locationManger.requestLocationUpdates(provider,100*1000,500,locationListener);
+        */
+        refresh(locationManger,criteria,locationListener);
     }
-
     private void updateToNewLocation(Location location) {
         TextView tv1;
         tv1 = (TextView) this.findViewById(R.id.gps);
@@ -121,6 +125,18 @@ public class GPSS extends AppCompatActivity {
             tv1.setText("无法获取地理信息");
         }
     }
+    private void refresh(LocationManager locationManger,Criteria criteria,LocationListener locationListener)
+    {
+        String provider = locationManger.getBestProvider(criteria, true); // 获取GPS信息
+        Location location = locationManger.getLastKnownLocation(provider);// 通过GPS获取位置
+        updateToNewLocation(location);
+        locationManger.requestLocationUpdates(provider, 100 * 1000, 500, locationListener);
+    }
+
+    public void refresh(View view) {
+        getLocation();
+    }
+
     /*
     private LocationListener locationListener = new LocationListener(){
         //位置发生改变时调用
