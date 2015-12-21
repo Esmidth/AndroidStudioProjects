@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
-        latitudeValue = (TextView) findViewById(R.id.latitude)
+        latitudeValue = (TextView) findViewById(R.id.latitude);
     }
 
     @Override

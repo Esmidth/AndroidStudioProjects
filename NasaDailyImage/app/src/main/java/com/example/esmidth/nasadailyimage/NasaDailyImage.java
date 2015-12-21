@@ -1,15 +1,13 @@
 package com.example.esmidth.nasadailyimage;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-import org.xml.sax.helpers.DefaultHandler;
 
 public class NasaDailyImage extends AppCompatActivity {
 
@@ -17,6 +15,9 @@ public class NasaDailyImage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nasa_daily_image);
+        Uri uri = Uri.parse("http://www.baidu.com");
+        Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+        startActivity(intent);
         //IotHandler handler = new IotHandler();
         //handler.processFeed();
         //resetDisplay(handler.getTitle(),handler.getDate(),handler.getImage(),handler.getDescription());
@@ -53,7 +54,6 @@ public class NasaDailyImage extends AppCompatActivity {
         dateView.setText(date);
 
         ImageView imageView = (ImageView)findViewById(R.id.imageView);
-        imageView.setImageBitmap(image);
 
         TextView descriptionView = (TextView)findViewById(R.id.imageDescription);
         descriptionView.setText(description);

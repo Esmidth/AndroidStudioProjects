@@ -117,7 +117,7 @@ public class GPSS extends AppCompatActivity {
         {
             double latitude = location.getLatitude();
             double longitude = location.getLongitude();
-            tv1.setText("维度：" +  latitude+ "\n经度" + longitude);
+            tv1.setText("维度：" +  latitude+ "\n经度：" + longitude);
             //tv1.setText("Hello FUCK");
         }
         else
